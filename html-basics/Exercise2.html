@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linesolid{
+            border-top:2px solid #000;
+            padding-top: 10px;
+        }
+        input {
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-left-style: none;
+        border-color: black;
+        background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="text-align:right; margin-right:110px">Patient Registration Form</h4>
+    <div>   
+        <form style="border:2px solid #000;padding-top:10px;padding-bottom:10px;padding-left:10px; padding-right:10px; margin-left:100px; margin-right:100px">
+            <div>
+                <label for="patientname">Patient's Name(Last,First,MI):</label>
+                <input text id="patientname" name="patientname">
+            </div>
+            <br>
+            <div>
+                <label for="homenumber">Patient's Home Phone Number:</label>
+                <input type="number" id="homenumber" name="homenumber">
+                <label for="alternatephonenumber">Alternate Phone Number(</label>
+                <input type="radio" id="alternatephonenumber_cell" name="alternatephonenumber" value="yes">
+                <label for="alternatephonenumber_cell">Cell or</label>
+                <input type="radio" id="alternatephonenumber_work" name="alternatephonenumber" value="yes">
+                <label for="alternatephonenumber_work">Work):</label>
+                <input type="text" id="alternatephonenumber" name="alternatephonenumber">
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="email">E-Mail Address:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                <label for="apt">Apt.#:</label>
+                <input type="text" id="apt" name="apt">
+            </div>
+            <br>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip" name="zip">
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age">
+                <label for="sex">Sex:</label>
+                <input type="radio" id="male" name="sex" value="yes">
+                <label for="male">M</label>
+                <input type="radio" id="female" name="sex" value="yes">
+                <label for="female">F</label>
+                <label for="ssn">Social Security Number:</label>
+                <input type="text" id="ssn" name="ssn">
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="maritalstatus">Marital Status:</label>
+                <input type="radio" id="maritalstatus_married" name="martialstatus" value="yes">
+                <label for="maritalstatus_married">Married</label>
+                <input type="radio" id="maritalstatus_single" name="martialstatus" value="yes">
+                <label for="maritalstatus_single">Single</label>
+                <input type="radio" id="maritalstatus_divorced" name="martialstatus" value="yes">
+                <label for="maritalstatus_divorced">Divorced</label>
+                <input type="radio" id="maritalstatus_widowed" name="martialstatus" value="yes">
+                <label for="maritalstatus_widowed">Widowed</label>
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="patient_employer">Patient's Employer:</label>
+                <input type="text" id="patient_employer" name="patient_employer">
+                <label for="employeestatus">Employee Status:</label>
+                <input type="radio" id="employeestatus_fulltime" name="employeestatus" value="yes">
+                <label for="employeestatus_fulltime">Full Time</label>
+                <input type="radio" id="employeestatus_parttime" name="employeestatus" value="yes">
+                <label for="employeestatus_parttime">Part Time</label>
+                <input type="radio" id="employeestatus_unemployed" name="employeestatus" value="yes">
+                <label for="employeestatus_unemployed">Unemployed</label>
+                <input type="radio" id="employeestatus_retired" name="employeestatus" value="yes">
+                <label for="employeestatus_retired">Retired</label>
+                <input type="radio" id="employeestatus_student" name="employeestatus" value="yes">
+                <label for="employeestatus_student">Student</label>
+                <input type="radio" id="employeestatus_other" name="employeestatus" value="yes">
+                <label for="employesetatus_other">other</label>
+                <input type="text" id="employeestatus" name="employeestatus">
+            </div>
+            <br>
+            <div class="linesolid">
+                <label for="emergency_contact">Emergency Contact:</label>
+                <input type="number" id="emergency_contact" name="emergency_contact">
+                <label for="relationship_to_patient">Relationship to Patient:</label>
+                <input type="text" id="relationship_to_patient" name="relationship_to_patient">
+            </div>
+            <br>
+            <div>
+                <label for="emergency_address">Address:</label>
+                <input type="text" id="emergency_address" name="emergency_address">
+                <label for="emergency_phonenumber">Phone Number:</label>
+                <input type="number" id="emergency_phonenumber" name="emergency_phonenumber">
+            </div>
+            <br>
+            <div class="linesolid">
+                <strong>INSURANCE INFORMATION</strong>
+                <div><br>
+                    <label for="primary_insurance">Primary Insurance:</label>
+                    <input type="text" id="primary_insurance" name="primary_insurance">
+                    <label for="secondary_insurance">Secondary Insurance:</label>
+                    <input type="text" id="secondary_insurance" name="secondary_insurance">
+                    <br>
+                    <label for="primarypatient_subscriber/policyholder">Patient is Subscriber/Policy Holder:</label>
+                    <input type="radio" id="primarypatient_subscriber/policyholder_yes" name="primarypatient_policyholder" value="yes">
+                    <label for="patient_subscriber/policyholder_yes">Y</label>
+                    <input type="radio" id="primarypatient_subscriber/policyholder_no" name="primarypatient_policyholder" value="yes">
+                    <label for="patient_subscriber/policyholder_no">N</label>
+                    <label for="secondarypatient_subscriber/policyholder">Patient is Subscriber/Policy Holder:</label>
+                    <input type="radio" id="secondarypatient_subscriber/policyholder_yes" name="secondarypatient_policyholder" value="yes">
+                    <label for="secondarypatient_subscriber/policyholder_yes">Y</label>
+                    <input type="radio" id="secondarypatient_subscriber/policyholder_no" name="secondarypatient_policyholder" value="yes">
+                    <label for="secondarypatient_subscriber/policyholder_no">N</label>
+                </div>
+            </div>
+            <br>
+            <div class="linesolid">
+                <strong>INSURED INFORMATION (IF OTHER THAN PATIENT) - We will request to scan your ID and insurance card</strong>
+                <div><br>
+                <label for="subscriber_policyholder">Subscribe/Policy Holder:</label>
+                <input type="text" id="subscriber_policyholder" name="subscriber_policyholder">
+                <label for="relationshiptopatient">Relationship to Patient:</label>
+                <input type="text" id="relationshiptopatient" name="relationshiptopatient">
+                <br>
+                <label for="ins_address">Address:</label>
+                <input type="text" id="ins_address" name="ins_address">
+                <br>
+                <label for="ins_ssn">Social Security Number:</label>
+                <input type="text" id="ins_ssn" name="ins_ssn">
+                <br>
+                <label for="ins_dob">Date of Birth:</label>
+                <input type="text" id="ins_dob" name="ins_dob">
+                <br>
+                <label for="ins_hisorher">His or Her Employer:</label>
+                <input type="text" id="ins_hisorher" name="ins_hisorher">
+                <label for="ins_numb">Work Phone Number:</label>
+                <input type="number" id="ins_numb" name="ins_numb">
+                </div>
+            </div>
+            <br>
+            <div class="linesolid">
+                <strong>RELEASE OF INFORMATION</strong><br>
+                <p>I hearby give permission to the person(s) listed below to receive information about the care of the above named patient.</p><br>
+                <label for="names">Name(s):</label>
+                <input type="text" id="names" name="names">
+                <label for="rel_to_patient">Relationship to Patient:</label>
+                <input type="text" id="rel_to_patient" name="rel_to_patient">
+            </div><br>
+            <div class="linesolid">
+                <p>Inova Medical Group reserves the right to charge a fee for any scheduled visits that are</p>
+                <ol>
+                    <li>Cancelled with less than 24 hours notice</li>
+                    <li>Are missed without calling to cancel (no show)</li>
+                </ol>
+                    <p>Cancellation Fee schedule: New Patient $50.00; Established Patient: $35.00</p>
+                    <label for="patient_signature">Patient/Partner or Gaurdian Signature:</label>
+                    <input type="text" id="patient_signature" name="patient_signature">
+                    <label for="patient_signature_date">Date:</label>
+                    <input type="text" id="patient_signature_date" name="patient_signature_date">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
