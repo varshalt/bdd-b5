@@ -1,9 +1,7 @@
-var a = 'character new length will be calculated'
-var b
 
-function firstfun() {   //function 
-   console.log(a)
-    return b= a.length   //     To calculate number of character
+function firstfun(x) {   //function 
+   console.log(x)
+    return  x.length   //     To calculate number of character
 }
 
-console.log(firstfun(a))    // print the final output
+console.log(firstfun('new program to count'))    // print the final output
