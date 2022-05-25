@@ -1,9 +1,7 @@
-var a=102
-var b=20
 
-function highnumb(){
+function highnumb(a,b){
     console.log('To find the highest number:\n' + a, + b)
-    if (a>b) 
+    if (a>b)                                                //Condition to check the highest of two numbers
     { 
         return a;
     }
@@ -12,4 +10,4 @@ function highnumb(){
         }
 }
 
-console.log('Highest number is: ' + highnumb())
+console.log('Highest number is: ' + highnumb(10, 20))        //Passing inputs for the function   
