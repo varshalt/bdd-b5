@@ -1,9 +1,9 @@
 var names = ["Adam", "Smith", "Sam", "Jhonathan"];
 
-var arry = {};          
+var arry = {};
 
-for (var i = 0;i<names.length;i++) {
-   var test = names[i]                  //storing strings into another variable
+for (var i = 0; i < names.length; i++) {
+    var test = names[i]                  //storing strings into another variable
     var test2 = test.length              // Calculates character in each string and stores the value in another variable
     arry[test2] = names[i]                 //Storing length as key and name as value in an object 
 
